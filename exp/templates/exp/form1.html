@@ -1,0 +1,9 @@
+<p>Aの経験値:{{A_exp}}</p>
+
+<p>Bの経験値:{{B_exp}}</p>
+
+<form method="POST">{% csrf_token %}
+    <p>AがBの為に消費するEXPを選択してください。</p>
+    <p>{{form}}</p>
+    <input type="submit" value="OK">
+</form>
